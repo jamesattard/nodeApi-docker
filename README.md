@@ -3,8 +3,8 @@
 This configuration builds a docker image to run a boilerplate and minimal NodeJS REST API Server. The API Server can be used for CRUD operations and is very easy to scaffold accordingly.
 
 The setup is based on two containers:
-1. nodejs (from the custom build), and 
-2. mongodb (based on the official MongoDB Docker image). 
+1. **nodejs** (from the custom build), and 
+2. **mongodb** (based on the official MongoDB Docker image). 
 
 The containers are linked together through the Docker internal network. 
 
