@@ -13,7 +13,9 @@ services:
       - MONGODB_ADDRESS=mongodb
     networks:
       - nodeapi
-
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
   mongodb:  
     image: mongo
     networks:
