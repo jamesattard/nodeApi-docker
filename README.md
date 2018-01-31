@@ -2,14 +2,18 @@
 
 This configuration builds a docker image to run a boilerplate and minimal NodeJS REST API Server. The API Server can be used for CRUD operations and is very easy to scaffold accordingly.
 
-The setup is based on two containers: one for NodeJS (which we will build) and the other for MongoDB (based on the official MongoDB Docker image). They are connected together by Docker internal network. 
+The setup is based on two containers:
+1. nodejs (from the custom build), and 
+2. mongodb (based on the official MongoDB Docker image). 
 
-Docker volumes allows us to develop and see changes in the container in real time. This means that we do not need to rebuild the Docker container. Pretty cool, uhm?
+The containers are linked together through the Docker internal network. 
+
+I am using Docker volumes so we can develop and see changes in the container in real time. This means that we do not need to rebuild the Docker container everytime the code is changed. Pretty cool, uhm?
 
 ## Building
 
-To build the setup:
-
+    $ git clone https://github.com/jamesattard/nodeApi-docker
+    $ cd nodeApi-docker/
     $ docker-compose build
 
 ## Run API Server
