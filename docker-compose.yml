@@ -4,7 +4,7 @@ services:
   node:  
     build: 
       context: .
-      dockerfile: dev.Dockerfile
+      dockerfile: node.Dockerfile
     command: npm run server
     ports:
     - "5000:5000"
